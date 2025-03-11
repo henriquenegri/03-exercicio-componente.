@@ -1,0 +1,17 @@
+<div>
+    <div class="mb-3 textoInicial">
+        <h1 class="mb-3">Apresentação: </h1>
+        
+    </div>
+
+    <div class="form-floating mb-3">
+        <input type="text" [(ngModel)]="nomeinput" class="form-control" id="nome">
+        <label for="nome">Informe seu nome</label>
+    </div>
+    <div class="form-floating">
+        <button class="btn btn-primary" type="button" (click)="mostrarTexto()">Clique aqui!</button><br>
+        <button class="btn btn-secondary" (click)="mudarCor()" [class.vermelho]="cor">Mudar cor</button>
+    </div>
+
+    <p>{{nomep}}</p>
+</div>
